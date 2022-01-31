@@ -7,7 +7,7 @@ import { HomeOutlined } from '@ant-design/icons';
 function Header() {
     return (
         <div className='header'>
-            <NavLink className='header__icon' to='/'><HomeOutlined /></NavLink>
+            <NavLink className='header__icon' to='/react-helper'><HomeOutlined /></NavLink>
             <div>Основная теория по библиотеке React</div>
             <div><img src={logo} className="App-logo" alt="logo" /></div>
         </div>
