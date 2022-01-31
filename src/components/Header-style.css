@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding-left: 20px;
+    overflow:hidden;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header__icon {
+    
+}

@@ -1,0 +1,41 @@
+.themes {
+    text-align: center;
+   
+}
+div .themes{
+    min-width: 200px;
+    align-content: center;
+}
+
+.themes__title {
+    color: #7F889A;
+    margin-bottom: 10px;
+}
+
+.themes a{
+    color: white;
+    text-decoration: none;
+    min-width: 200px;
+    display: block;
+}
+
+.themes__link {
+    min-width: 200px;
+    height: 30px;
+    font-size: 1.15em;
+}
+
+.themes__link_selected {
+     background: greenyellow;   
+}
+
+.themes__link a:hover {
+    background: grey;
+    min-width: 100%;
+    font-size: 1.15em;
+}
+
+.themes__link a:active {
+    color: white;
+    background: #202327;
+}
