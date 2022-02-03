@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from '../components/Counter';
 import './Content-style.css';
 
 
@@ -61,6 +62,27 @@ function State() {
             <div className="code-block">
                 <pre><code>{`
             const [name, setName] = useState('Mark');
+        `}</code></pre>
+            </div >
+            <div>
+                <Counter />
+            </div>
+            <div className="text-block">
+                <p>Примером работы со state является счётчик, который изменяется при нажатии на кнопку.</p>
+                <p>Код имеет следующий вид:</p>
+            </div>
+            <div className="code-block">
+                <pre><code>{`
+            function Counter() {
+                const [count, setCount] = useState(0);
+                return (
+                  <div className="count">
+                     <button className="count__btn" onClick={() => setCount(count - 1)}>-1</button>
+                     <p>Счётчик: {count}</p>
+                     <button className="count__btn" onClick={() => setCount(count + 1)}>+1</button>
+                  </div>
+                );
+            }
         `}</code></pre>
             </div >
         </div>

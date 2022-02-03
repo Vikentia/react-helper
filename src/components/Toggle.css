@@ -1,0 +1,17 @@
+.toggle__btn {
+   background-color: #759dee;;
+   font-size: 25px;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 25px;
+   border: 2px solid;
+   margin: 0 30px;
+}
+
+.toggle__btn:hover {
+    opacity: 0.7;
+}
+
+.toggle__btn:active {
+    opacity: 0.5;
+}

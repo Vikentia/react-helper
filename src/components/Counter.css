@@ -1,0 +1,23 @@
+.count {
+    display: flex;
+    justify-content: center;
+}
+
+.count__btn {
+   background-color: #759dee;;
+   font-size: 25px;
+   color: white;
+   width: 80px;
+   border-radius: 20px;
+   padding: 5px 25px;
+   border: 2px solid;
+   margin: 0 30px;
+}
+
+.count__btn:hover {
+    opacity: 0.7;
+}
+
+.count__btn:active {
+    opacity: 0.5;
+}

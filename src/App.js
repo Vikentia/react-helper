@@ -1,14 +1,14 @@
 
 import './App.css';
-import Navigation from './components/Navigation';
-import Header from './components/Header';
-import Content from './components/Content';
+import Navigation from './pages/Navigation';
+import Header from './pages/Header';
+import Content from './pages/Content';
+import Footer from './pages/Footer';
 
 function App() {
   return (
     <div className="App">
       <div className="App-header">
-
         <Header />
       </div>
       <div className="App-main">
@@ -18,6 +18,9 @@ function App() {
         <div className="App-content">
           <Content />
         </div>
+      </div>
+      <div className="App-footer">
+        <Footer />
       </div>
     </div>
   );

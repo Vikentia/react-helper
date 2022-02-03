@@ -47,6 +47,14 @@ min-width: 200px;
 width: 85vw;
 }
 
+.App-footer {
+  padding: 15px 0;
+  color: white;
+  opacity: 0.5;
+  font-size: 0.85em;
+}
+
+
 
 
 @keyframes App-logo-spin {

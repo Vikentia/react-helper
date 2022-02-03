@@ -1,4 +1,5 @@
 import React from 'react';
+import Toggle from '../components/Toggle'
 
 function Events() {
     return (
@@ -53,6 +54,44 @@ function Events() {
         `}</code></pre>
             </div>
             <div className="text-block">
+                <p>В компоненте, определённом с помощью ES6-класса, в качестве обработчика события обычно выступает один из методов класса. Например, этот компонент Toggle рендерит кнопку, которая позволяет пользователю переключать состояния между «Включено» и «Выключено»:</p>
+            </div>
+            <div className="code-block">
+                <pre><code>{`
+            class Toggle extends React.Component {
+                constructor(props) {
+                  super(props);
+                  this.state = {isToggleOn: true};
+              
+                  // Эта привязка обязательна для работы 'this' в колбэке.
+                    this.handleClick = this.handleClick.bind(this);
+                }
+
+                handleClick() {
+                    this.setState(prevState => ({
+                        isToggleOn: !prevState.isToggleOn
+                    }));
+                }
+
+                render() {
+                    return (
+                        <button className={'toggle__btn'} onClick={this.handleClick}>
+                            {this.state.isToggleOn ? 'Включено' : 'Выключено'}
+                        </button>
+                    );
+                }
+            }
+
+                    ReactDOM.render(
+                    <Toggle />,
+                    document.getElementById('root')
+                    );
+        `}</code></pre>
+            </div>
+            <div className="text-block">
+                <p>Результат кода:</p>
+                <Toggle />
+
                 <p>Внутри цикла часто нужно передать дополнительный аргумент в обработчик события. Например, если id — это идентификатор строки, можно использовать следующий вариант:</p>
             </div>
             <div className="code-block">
