@@ -6,8 +6,11 @@
     overflow:hidden;
 }
 
+.active-link {
+       background-color: #282c34; 
+}
+
 .header a {
     text-decoration: none;
     color: white;
 }
-
