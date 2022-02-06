@@ -91,6 +91,24 @@ function Events() {
             <div className="text-block">
                 <p>Результат кода:</p>
                 <Toggle />
+                <div className="text-block">
+                    <p>Этот же код, но переписанный на функциональную компоненту:</p>
+                </div>
+                <div className="code-block">
+                    <pre><code>{`
+            function Toggle() {
+                let [isToggleOn, setIsToggleOn] = useState(true);
+                function handleClick() {
+                  setIsToggleOn(!isToggleOn)
+                }
+                return (
+                  <button className={'toggle__btn'} onClick={() => handleClick()}>
+                    {isToggleOn ? 'Включено' : 'Выключено'}
+                  </button>
+                );
+              }
+        `}</code></pre>
+                </div >
 
                 <p>Внутри цикла часто нужно передать дополнительный аргумент в обработчик события. Например, если id — это идентификатор строки, можно использовать следующий вариант:</p>
             </div>
