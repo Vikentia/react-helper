@@ -17,18 +17,21 @@ div .themes{
     text-decoration: none;
     min-width: 200px;
     display: block;
+    border-radius: 5px;
 }
 
 .themes__link {
     min-width: 200px;
     height: 30px;
     font-size: 1.15em;
+
 }
 
 .themes__link a:hover {
     background: grey;
     min-width: 100%;
     font-size: 1.15em;
+    transition: all ease 0.7s;
 }
 
 .themes__link a:active {
